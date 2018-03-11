@@ -1,0 +1,5 @@
+- name: install go
+  yum: name=go state=latest
+- copy: src=profile
+        dest=/etc/profile
+        backup=yes

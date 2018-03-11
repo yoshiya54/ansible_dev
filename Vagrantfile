@@ -26,8 +26,7 @@ Vagrant.configure(2) do |config|
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
-   config.vm.network "private_network", ip: "192.168.33.10"
-   config.ssh.guest_port = "22"
+   config.vm.network "private_network", ip: "192.168.33.11"
    config.ssh.insert_key = false
 
   # Create a public network, which generally matched to bridged network.
@@ -54,8 +53,6 @@ Vagrant.configure(2) do |config|
   # end
   #
   # View the documentation for the provider you are using for more
-  # information on available options.
-
   # Define a Vagrant Push strategy for pushing to Atlas. Other push strategies
   # such as FTP and Heroku are also available. See the documentation at
   # https://docs.vagrantup.com/v2/push/atlas.html for more information.
@@ -70,6 +67,6 @@ Vagrant.configure(2) do |config|
   #   sudo apt-get update
   #   sudo apt-get install -y apache2
   # SHELL
-  config.ssh.username = "guest"
-  config.ssh.password = "guest"
+  config.ssh.username = "vagrant"
+  config.ssh.password = "vagrant"
 end
