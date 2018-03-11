@@ -1,7 +1,7 @@
 # Description
 This ansible will develop the development environment
 
-#Usage
+# Usage
 Vagrant start.
 $ vagrant up
 
